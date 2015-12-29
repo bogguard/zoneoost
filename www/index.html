@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+        <title>Brandweer Zone Oost</title>
+    </head>
+    <body>
+		<div id='header'><img id='zoneoostlogo' src="img/zoneoost.png" /><div id='beschikbaarheid'>Beschikbaarheid</div></div>
+		<div id=""><input type='hidden' disabled name="" id="zoneTel" placeholder="Enter mobile number" value="+32473985760 " type="tel" /></div>
+		
+		<!--<input type="range" name="slider-1" id="slider-1" value="50" min="0" max="100" data-highlight="true">
+		<div id='hourdiv'><input id="hours" type="number" name="hours" min="1" max="336" value="24"> <span>uren</span></div>-->
+		<div class="ui-field-contain" id="hourdiv">
+			<label for="hourslider"><span id='uurspan'>Uren</span>:</label>
+			<input id="hours" type="range" name="hourslider" value="24" min="1" max="48" data-highlight="true">
+		</div>
+
+		<div id='btndiv'><input class='btn_green' id="btnB10" type="button" value="Beschikbaar - 10 min" /></div>
+		<div id='btndiv'><input class='btn_red' id="btnNB" type="button" value="Niet beschikbaar" /></div>
+		<div id='btnplace'></div>		
+		<div id='btndiv'><input class='btn_green' id="btnBDV" type="button" value="Beschikbaar - Dringend VTO" /></div>
+		<div id='btndiv'><input class='btn_green' id="btnBD10" type="button" value="Beschikbaar - Dringend 10 min" /></div>		
+		<div id='btndiv'><input class='btn_green' id="btnB15" type="button" value="Beschikbaar - 15 min" /></div>
+		<div id='btnplace'></div>	
+		<div id='btndiv'><input class='btn_red' id="btnNBO" type="button" value="Niet beschikbaar - In opdracht" /></div>		
+		<div id='btndiv'><input class='btn_red' id="btnNBZ" type="button" value="Niet beschikbaar - Ziekte" /></div>
+        <div id='btnplace'></div>
+        <div id='btndiv'><input class='btn_red' id='btnHour' type="button" value="uren/dagen" /></div>   
+
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/sms.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>		
+		
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

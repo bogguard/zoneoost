@@ -1,0 +1,54 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+H1{
+	text-align:center;
+}
+
+#header{
+	padding-top:25px;
+	padding-left:5px;
+	font-size:10px;
+}
+#header #zoneoostlogo{
+	float:left;
+	padding-right:5px;
+}
+#header #beschikbaarheid{
+	font-weight:bold;
+	color:#ee1e33; /*red*/
+	padding-top:28px;
+	font-size:17px;
+}
+
+#hourdiv{
+	color:#ee1e33; /*red*/
+	padding-left:5px;
+}
+
+#btnplace{
+	padding:10px;
+}
+
+#zoneTel{
+	text-align:right;
+	width:98%;
+	color:grey;
+}
+
+.ui-btn { height: 1.4em;  }
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E8E7E7;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
